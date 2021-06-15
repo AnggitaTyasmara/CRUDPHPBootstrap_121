@@ -117,16 +117,16 @@
 
                         <td>
                             <!-- aksi edit dan delete, di sini menggunakan btn-sm agar tombolnya kecil-->
+                            <a href="detail.php?id=<?php echo $data['Id']; ?>" class="btn btn-success btn-sm text-white">DETAIL</a>
                             <!-- link untuk masuk ke halaman edit -->
                             <!-- edit.php?id=<
                             ?php echo $data['id']; ?> mengirim id data mahasiswa ke halaman edit -->
                     
-                            <a href="edit.php?id=<?php echo $data['id']; ?>" 
-                            class="btn btn-warning btn-sm text-white">EDIT</a>
+                            <a href="edit.php?id=<?php echo $data['Id']; ?>" class="btn btn-warning btn-sm text-white">EDIT</a>
 
                             <!-- link untuk delete berdasarkan id, akan keluar confirm terlebih dahulu -->
 
-                            <a href="delete.php?id=<?php echo $data['id']; ?>" 
+                            <a href="delete.php?id=<?php echo $data['Id']; ?>" 
                             class="btn btn-danger btn-sm" onclick="return confirm('anda yakin akan menghapus data mahasiswa ini?')">HAPUS</a>
                 
                         </td>
